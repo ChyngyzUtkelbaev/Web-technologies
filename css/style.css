@@ -1,0 +1,249 @@
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'),
+        url('../fonts/Roboto/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Regular'), local('Roboto-Regular'),
+        url('../fonts/Roboto/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.woff?v7xfpd') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-circle-right:before {
+  content: "\e900";
+}
+.icon-display:before {
+  content: "\e901";
+}
+.icon-pencil-case:before {
+  content: "\e902";
+}
+.icon-target:before {
+  content: "\e903";
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  background: #7541fd;
+}
+body {
+  font: 15px/1.2 "Roboto", sans-serif;
+}
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar {
+
+  margin-top: 64px;
+}
+.nav {
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  text-align: center;
+}
+.nav-home {
+  background: #fff;
+  border-radius: 50px;
+  color: #7e44fe;
+}
+.nav-name {
+  font-size: 32px;
+  letter-spacing: 3px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+  padding-left: 0;
+}
+
+.log {
+  padding: 23px 30px;
+  border: none;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.btn {
+  background: #fff;
+  font-size: 14px;
+  letter-spacing: 2px;  
+  color: #673dfc;
+  font-weight: 700;
+  font-family: "Roboto";
+  text-align: center;  border-radius: 50px;
+  outline: none;
+}
+.btn:hover {
+  cursor: pointer;
+}
+
+
+
+
+.hero {
+  flex-direction: column;
+  margin-top: 180px;
+  align-items: flex-start;
+  padding-bottom: 125px;
+  border-bottom: 1px solid #fff;
+}
+.content {
+  margin-top: 37px;
+}
+.title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin: 0;
+}
+.mid {
+  width: 1166px;
+  height: 233px;
+  font-size: 88px;
+  line-height: 100px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Roboto";
+  margin-bottom: 0;
+}
+.und-content {
+  margin-top: 56px;
+  width: 600px;
+  height: 71px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.lines {
+  display: flex;
+}
+.line {
+  margin-left: 15px;
+  width: 36px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #663cfc;
+}
+.line:first-child {
+  margin-left: 0;
+}
+.line:nth-child(2) {
+  background: #fff;
+}
+
+
+
+
+.cadrs {
+  display: flex;
+  margin-bottom: 370px;
+}
+.cards-container {
+  margin: 0 auto;
+  max-width: 1170px;
+  display: flex;
+}
+.card {
+  width: 390px;
+  padding: 60px 40px;
+  margin: 0;
+  color: #fdfdfd;
+  border: none;
+}
+.card:hover {
+  background: #fff;
+  color: #000;
+}
+
+.icon {
+  width: 78px;
+  height: 66px;
+  font-size: 52px;
+}
+
+.card:hover .icon {
+  color: #663cfc;
+}
+
+
+.card-title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "Roboto";
+}
+.card-content {
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.card-links {
+  margin-top: 50px;
+}
+/* height: 28px;
+font-size: 16px;
+letter-spacing: 2px;
+line-height: 28px;
+color: #663cfc;
+font-family: "Font Awesome"; */
